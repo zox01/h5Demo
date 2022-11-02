@@ -19,6 +19,215 @@
   <body>
     <h1>Meta examples</h1>
 
-    <p>Japanese example: ご飯が熱い。</p>
+    <h2 id="Mailing_address">邮寄地址</h2>
+
+
+    <p><a href="https://www.mozilla.org/firefox/">
+      下载 Firefox
+     </a></p>
+
+     <p><a href="https://www.mozilla.org/firefox/">
+      点击这里
+    </a>下载 Firefox</p>
+
+    <a href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=zh-CN"
+    download="firefox-latest-64bit-installer.exe">
+    下载最新的 Firefox 中文版 - Windows（64 位）
+    </a>
+
+    <p>Japanese example: ご飯が熱い。 条件跳转指令是根据标志寄存器中的相关标志位的值来进行跳转的,因此,条件跳转指令只能与那些能够影响标志寄存器的相关标志位的指令配合使用;
+      能够直接影响标志寄存器的相关标志位的指令有:
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      1、算术运算指令 : add、sub、adc、sbb、inc、dec、neg、mul、div、imul、idiv,等等;
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      2、按位逻辑运算 : and、or、xor、not,等等;
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      3、比较运算指令 : cmp、test;
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      4、移位操作指令 : shr、shl、sar、sal、ror、rol、rcr、rcl;
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      5、BCD数调整指令: aaa、aas、daa、das、aam、aad;
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      6、标志处理指令 : clc、stc、cmc、cld、std、cli、sti;
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      能够间接影响标志寄存器的相关标志位的指令序列有:
+      pushf --> pop eax --> modify eax --> push eax --> popf
+      即:
+      pushf
+      pop eax
+      modify eax
+      push eax
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      popf
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      jbe OPR
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      这样的一系列操作之后,条件转移指令"jbe OPR"也可以根据标志寄存器的相关标志位进行转移;
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      测试：
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      jmp 无条件跳转
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      无符号
+      Je 等于跳转
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      Jne 不等于跳转
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      Ja = jnbe 大于跳转 = JNBE（不小于或等于跳转）
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      Jb= jnae 小于跳转 = JNAE（不大于或等于跳转）
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      Jna 不大于跳转 = JBE（小于或等于跳转）
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      Jnb 不小于跳转 = JAE（大于或等于跳转）
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      Js 为负跳转
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      Jz 为0跳转
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      Jc 进位跳转
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      Jo 溢出跳转
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      Jp 奇偶位置位 跳转
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      </p>
+
+    <a href="https://www.mozilla.org/zh-CN/">
+      <img src="mozilla-image.png" alt="链接至 Mozilla 主页的 Mozilla 标志">
+    </a>
+
+    <p>本页面底部可以找到<a href="#Mailing_address">公司邮寄地址</a>。</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
   </body>
 </html>
